@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id = "container">
+        <div id ="form-mask">
+    <form id ="myForm">
+        <h1>Build-A-Pet</h1>
+        <div class = "input-container">
+    <div>Pet Name:</div>
+    <input type="text" id="name" required><br>
+    </div>
+    <div class = "input-container">
+    <select>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="fish">Fish</option>
+        <option value="hamster">Hamster</option>
+    </select name = "species" id = "species">
+    </div>
+    <div class = "input-container">
+    <br><input type="radio" name="numOfLegs" value="one">One<br>
+    <input type="radio" name="numOfLegs" value="two"> Two<br>
+    <input type="radio" name="numOfLegs" value="three"> Three<br>
+    <input type="radio" name="numOfLegs" value="four"> Four<br>
+    </div>
+    <div class = "input-container">
+    <input type="checkbox" name="specialAbilities" value="SuperStrength">Super Strength<br>
+    <input type="checkbox" name="specialAbilities" value="Invisibilty">Invisibility<br>
+    <input type="checkbox" name="specialAbilities" value="SuperSpeed">Super Speed
+    </div>
+    <div>Pet Email:</div>
+    <input type="text" id="petEmail"><br>
+    <div>Pet Password:</div>
+    <input type="text-area" id="petPassword"><br>
+    <div>Description:</div>
+    <input type="text" id="description"><br>
+    <button type="button">Submit</button>
+    </form>
+    </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+
+</html>
