@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orienta" rel="stylesheet">
 </head>
 <body>
     <div id = "container">
@@ -17,23 +18,23 @@
     <input type="text" id="name" required><br>
     </div>
     <div class = "input-container">
-    <select>
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="fish">Fish</option>
-        <option value="hamster">Hamster</option>
-    </select name = "species" id = "species">
+    <select name = "species" id = "species">
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Fish">Fish</option>
+        <option value="Hamster">Hamster</option>
+    </select>
     </div>
-    <div class = "input-container">
-    <br><input type="radio" name="numOfLegs" value="one">One<br>
-    <input type="radio" name="numOfLegs" value="two"> Two<br>
-    <input type="radio" name="numOfLegs" value="three"> Three<br>
-    <input type="radio" name="numOfLegs" value="four"> Four<br>
+    <div id = "legs-container">
+    <br><input type="radio" class = "numberOfLegs" name="numOfLegs" value="one">One<br>
+    <input type="radio" class = "numberOfLegs" name="numOfLegs" value="two"> Two<br>
+    <input type="radio" class = "numberOfLegs" name="numOfLegs" value="three"> Three<br>
+    <input type="radio" class = "numberOfLegs"  name="numOfLegs" value="four"> Four<br>
     </div>
-    <div class = "input-container">
-    <input type="checkbox" name="specialAbilities" value="SuperStrength">Super Strength<br>
-    <input type="checkbox" name="specialAbilities" value="Invisibilty">Invisibility<br>
-    <input type="checkbox" name="specialAbilities" value="SuperSpeed">Super Speed
+    <div class = "SA-Container">
+    <input type="checkbox" class = "specialAbilities" name="specialAbilities" value="SuperStrength">Super Strength<br>
+    <input type="checkbox" class = "specialAbilities" name="specialAbilities" value="Invisibilty">Invisibility<br>
+    <input type="checkbox" class = "specialAbilities" name="specialAbilities" value="SuperSpeed">Super Speed
     </div>
     <div>Pet Email:</div>
     <input type="text" id="petEmail"><br>
@@ -41,10 +42,11 @@
     <input type="text-area" id="petPassword"><br>
     <div>Description:</div>
     <input type="text" id="description"><br>
-    <button type="button">Submit</button>
+    <button type="submit">Submit</button>
     </form>
     </div>
     </div>
+    <div id ="result"></div>
 </div>
 <script src="app.js"></script>
 </body>
